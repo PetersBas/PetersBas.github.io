@@ -61,7 +61,7 @@
 <h1 class="scholmd-title"><p class="pull-right"><a href="index.pdf"><img src="https://slimgroup.slim.gatech.edu/ScholMD/icons/PDF_file_96.png" alt="PDF Version" width=48px height=48px /></a><a href="index.md"><img src="https://slimgroup.slim.gatech.edu/ScholMD/icons/SchMD_file_96.png" alt="Markdown Version" width=48px height=48px /></a></p>Bas Peters</h1>
 </header>
 <p>PhD, University of British Columbia (2019)<br />MSc and BSc, Utrecht University, The Netherlands<br /><a href="https://www.linkedin.com/in/bas-peters-b26ba3a/">LinkedIn</a> | <a href="https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a> | <a href="https://github.com/PetersBas">GitHub</a></p>
-<p>Hi! I currently work for <a href="http://www.compgeoinc.com">Computational Geosciences Inc.</a> where I research <em>i</em>) computational methods to design and train neural networks based on reversibility for large scale image-to-image or 3D-data-to-3D mappings; <em>ii</em>) Networks, loss functions, and regularization of deep networks for vision tasks in the earth sciences; <em>iii</em>) various deep-learning applications including: structural geological understanding of seismic images, generating structural geological maps and models from remote sensing, airborne geophysical, and prior geological knowledge; <em>iv</em>) development of a deep-learning toolbox for the aforementioned applications, which is also used for mineral prospectivity mapping and ground water mapping.</p>
+<p>Hi! I currently work for <a href="http://www.compgeoinc.com">Computational Geosciences Inc.</a> where I research <em>i</em>) computational methods to design and train neural networks for large scale inputs; <em>ii</em>) Networks, loss functions, and regularization of deep networks for vision tasks in the earth sciences.</p>
 <figure class="scholmd-float scholmd-table-float" id="interests">
 <div class="scholmd-float-content"><table>
 <thead>
@@ -128,15 +128,16 @@
 </figure>
 <p><a href="http://www.earthdoc.org/publication/publicationdetails/?publication=97269">Automatic Classification of Geologic Units in Seismic Images Using Partially Interpreted Examples</a> / <a href="https://arxiv.org/pdf/1901.03786">arXiv</a></p>
 <p><a href="https://library.seg.org/doi/10.1190/tle38070534.1">Neural-networks for geophysicists and their application to seismic data interpretation</a> / <a href="https://arxiv.org/pdf/1903.11215">arXiv</a></p>
+<p><a href="https://library.seg.org/doi/10.1190/segam2019-3216640.1">Does shallow geological knowledge help neural-networks to predict deep units?</a> / <a href="https://arxiv.org/pdf/1904.04413">arXiv</a></p>
 <figure class="scholmd-float scholmd-figure" id="fig:seismichorizon">
-<div class="scholmd-float-content"><figure class="scholmd-subfig" style="display: inline-block; width: 100%">
+<div class="scholmd-float-content"><figure class="scholmd-subfig" style="display: inline-block; width: 80%">
 <img src="Figures/SeismicHorizon/Figure11.png" />
 </figure></div>
 <div class="scholmd-float-caption"><figcaption><span class="scholmd-caption-head"><span class="scholmd-caption-head-prefix">Figure</span><span class="scholmd-caption-head-label">3</span></span><span class="scholmd-caption-text">Detecting horizons (interfaces) of interest in seismic images. There are a number of training images and each has a few labels (seed points). Our method performs better than methods not based on learning, especially in areas where there are large gaps in the labels.</span></figcaption></div>
 </figure>
 <p><a href="https://library.seg.org/doi/10.1190/INT-2018-0225.1">Multiresolution neural networks for tracking seismic horizons from few training images</a> / <a href="https://arxiv.org/pdf/1812.11092">arXiv</a></p>
 <h2 id="constopt">Constrained optimization for regularizing imaging inverse problems</h2>
-<p>Collaborator: Felix J. Herrmann</p>
+<p>Collaborator: Felix J. Herrmann. Under Construction</p>
 <figure class="scholmd-float scholmd-figure" id="fig:inpainting">
 <div class="scholmd-float-content"><figure class="scholmd-subfig" style="display: inline-block; width: 50%">
 <img src="Figures/SIP/deblurring_inpainting_results2.jpg" />
@@ -144,8 +145,9 @@
 <div class="scholmd-float-caption"><figcaption><span class="scholmd-caption-head"><span class="scholmd-caption-head-prefix">Figure</span><span class="scholmd-caption-head-label">4</span></span><span class="scholmd-caption-text">Detecting horizons (interfaces) of interest in seismic images. There are a number of training images and each has a few labels (seed points). Our method performs better than methods not based on learning, especially in areas where there are large gaps in the labels.</span></figcaption></div>
 </figure>
 <h2 id="soft">Software</h2>
+<p>Under Construction</p>
 <h2 id="numlinalg">Numerical linear algebra and PDE-constrained optimization</h2>
-<p>Collaborators: Felix J. Herrmann &amp; Tristan van Leeuwen</p>
+<p>Collaborators: Felix J. Herrmann &amp; Tristan van Leeuwen Under Construction</p>
 <h2 id="apps">Assorted applications</h2>
 <figure class="scholmd-float scholmd-figure" id="fig:hypernet">
 <div class="scholmd-float-content"><figure class="scholmd-subfig" style="display: inline-block; width: 40%">
@@ -153,7 +155,7 @@
 </figure><figure class="scholmd-subfig" style="display: inline-block; width: 35%">
 <img src="Figures/Video/true_plus_segmentation_bear_xy.png" />
 </figure></div>
-<div class="scholmd-float-caption"><figcaption><span class="scholmd-caption-head"><span class="scholmd-caption-head-prefix">Figure</span><span class="scholmd-caption-head-label">5</span></span><span class="scholmd-caption-text">Video segmentation of a 4D RGB video in one go. There is only a single video in the entire dataset that has 3 annotated slices. Prediction+data on the right. Uses <a href="#fig:hypernet">HyperNet</a></span></figcaption></div>
+<div class="scholmd-float-caption"><figcaption><span class="scholmd-caption-head"><span class="scholmd-caption-head-prefix">Figure</span><span class="scholmd-caption-head-label">5</span></span><span class="scholmd-caption-text">Video segmentation of a 4D RGB video in one go. There is only a single video in the entire dataset that has 3 annotated slices. Prediction+data on the right. Uses <a href="#compnet">HyperNet</a></span></figcaption></div>
 </figure>
 <p>.</p>
 <div class="references">
