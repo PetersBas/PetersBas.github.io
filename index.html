@@ -144,8 +144,26 @@
 </figure></div>
 <div class="scholmd-float-caption"><figcaption><span class="scholmd-caption-head"><span class="scholmd-caption-head-prefix">Figure</span><span class="scholmd-caption-head-label">4</span></span><span class="scholmd-caption-text">Reconstructing images from noisy, blurred, and missing pixels. Shows basis-pursuit denoise using wavelets, versus our method: projection onto an intersection of constraint sets that were learned from examples.</span></figcaption></div>
 </figure>
+<p><a href="https://arxiv.org/pdf/1903.03942">Generalized Minkowski sets for the regularization of inverse problems (preprint)</a></p>
+<p><a href="https://arxiv.org/pdf/1902.09699">Algorithms and software for projections onto intersections of convex and non-convex sets with applications to inverse problems (preprint)</a></p>
+<p><a href="https://library.seg.org/doi/abs/10.1190/geo2018-0192.1">Projection methods and applications for seismic nonlinear inverse problems with multiple constraints</a></p>
+<p><a href="https://library.seg.org/doi/abs/10.1190/tle36010094.1">Constraints versus penalties for edge-preserving full-waveform inversion</a> / <a href="https://www.slim.eos.ubc.ca/Publications/Public/Journals/TheLeadingEdge/2016/peters2016cvp/peters2016cvp.pdf">preprint</a></p>
+<p><a href="http://www.earthdoc.org/publication/publicationdetails/?publication=80659">Constrained Waveform Inversion of Colocated VSP and Surface Seismic Data</a> / <a href="https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/smithyman2015EAGEcwi/smithyman2015EAGEcwi.pdf">preprint</a></p>
 <h2 id="soft">Software</h2>
-<p>Under Construction</p>
+<p><a href="https://petersbas.github.io/SetIntersectionProjectionDocs/">SetIntersectionProjection</a></p>
+<ul>
+<li>Julia 1.1, uses worker parallelism and multithreading</li>
+<li>Simple way of setting up constraints. Software will provide a projector onto the intersection</li>
+<li>Use projector for any suitable optimization problem</li>
+<li>Contains example of full-waveform inversion, image inpainting/deblurring/denoising, image desaturation</li>
+</ul>
+<p><br /><a href="https://petersbas.github.io/GeneralizedMinkowskiSetDocs/">Generalized Minkowski Set projections</a></p>
+<ul>
+<li>This is an extension of SetIntersectionProjection</li>
+<li>Build ‘complicated’ models from simple ones, via the addition and intersection of constraint sets</li>
+<li>Software will provide a projector onto the Generalized Minkowski set</li>
+<li>Contains examples of seismic full-waveform inversion and video segmentation.</li>
+</ul>
 <h2 id="numlinalg">Numerical linear algebra and PDE-constrained optimization</h2>
 <p>Collaborators: Felix J. Herrmann &amp; Tristan van Leeuwen Under Construction</p>
 <h2 id="apps">Assorted applications</h2>
