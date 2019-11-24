@@ -137,18 +137,40 @@
 </figure>
 <p><a href="https://library.seg.org/doi/10.1190/INT-2018-0225.1">Multiresolution neural networks for tracking seismic horizons from few training images</a> / <a href="https://arxiv.org/pdf/1812.11092">arXiv</a></p>
 <h2 id="constopt">Constrained optimization for regularizing imaging inverse problems</h2>
-<p>Collaborator: Felix J. Herrmann. Under Construction</p>
+<p>Collaborator: Felix J. Herrmann.</p>
+<p>We incorporate prior knowledge into the inverse problems via a projection of a vector <span class="math scholmd-math-inline">\(m\)</span> onto an intersection of <span class="math scholmd-math-inline">\(p\)</span> convex and non-convex sets, 
+<span class="math scholmd-math-display" style="display: block;">\[
+\begin{equation*}
+\min_{x} \frac{1}{2} \| x - m \|_2^2 + \sum_{i=1}^{p} \iota_{\mathcal{C}_i}(A_i x).
+\end{equation*}
+\]</span>
+ Each sets may include a different linear operator <span class="math scholmd-math-inline">\(A_i\)</span>, such as discrete derivative matrices, Fourier/DCT/wavelet/curvelet transforms. We denote the set-indicator function as <span class="math scholmd-math-inline">\(\iota_{\mathcal{C}_i}\)</span>. The projection approach has the advantage that each sets is defined independently of all others; no trade-off/balancing parameters are required. Julia software is available as the <a href="https://petersbas.github.io/SetIntersectionProjectionDocs/">SetIntersectionProjection</a> package.</p>
 <figure class="scholmd-float scholmd-figure" id="fig:inpainting">
 <div class="scholmd-float-content"><figure class="scholmd-subfig" style="display: inline-block; width: 70%">
 <img src="Figures/SIP/deblurring_inpainting_results2.jpg" />
 </figure></div>
-<div class="scholmd-float-caption"><figcaption><span class="scholmd-caption-head"><span class="scholmd-caption-head-prefix">Figure</span><span class="scholmd-caption-head-label">4</span></span><span class="scholmd-caption-text">Reconstructing images from noisy, blurred, and missing pixels. Shows basis-pursuit denoise using wavelets, versus our method: projection onto an intersection of constraint sets that were learned from examples.</span></figcaption></div>
+<div class="scholmd-float-caption"><figcaption><span class="scholmd-caption-head"><span class="scholmd-caption-head-prefix">Figure</span><span class="scholmd-caption-head-label">4</span></span><span class="scholmd-caption-text">Reconstructing images from noisy, blurred, and missing pixels. Shows basis-pursuit denoise using wavelets, versus our method (PARSDMM): projection onto an intersection of constraint sets that were learned from examples.</span></figcaption></div>
+</figure>
+<ul>
+<li><a href="https://arxiv.org/pdf/1902.09699">Algorithms and software for projections onto intersections of convex and non-convex sets with applications to inverse problems (preprint)</a></li>
+<li><a href="https://library.seg.org/doi/abs/10.1190/geo2018-0192.1">Projection methods and applications for seismic nonlinear inverse problems with multiple constraints</a></li>
+<li><a href="https://library.seg.org/doi/abs/10.1190/tle36010094.1">Constraints versus penalties for edge-preserving full-waveform inversion</a> / <a href="https://www.slim.eos.ubc.ca/Publications/Public/Journals/TheLeadingEdge/2016/peters2016cvp/peters2016cvp.pdf">preprint</a></li>
+<li><a href="http://www.earthdoc.org/publication/publicationdetails/?publication=80659">Constrained Waveform Inversion of Colocated VSP and Surface Seismic Data</a> / <a href="https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/smithyman2015EAGEcwi/smithyman2015EAGEcwi.pdf">preprint</a></li>
+</ul>
+<p>In case it is difficult to describe a model/image using a set or intersection of sets as above, we can use an additive model. Therefore, we introduced a generalization of the Minkowski sets as 
+<span class="math scholmd-math-display" style="display: block;">\[
+\begin{equation*}
+\mathcal{M} \equiv \{ m = u + v \: | \: u \in \bigcap_{i=1}^p \mathcal{D}_i, \: v \in \bigcap_{j=1}^q \mathcal{E}_j, \: m \in \bigcap_{k=1}^r \mathcal{F}_k \}.
+\end{equation*}
+\]</span>
+ This set allows us to construct a ‘complicated’ model/image from two ‘simple’ ones. We can add multiple pieces of prior knowledge about each component, <span class="math scholmd-math-inline">\(u\)</span> and <span class="math scholmd-math-inline">\(v\)</span>, as well an multiple constraints on their sum. In spirit, this approach generalized ideas from cartoon-texture decomposition, robust prinipal component analysis, and morphological component analysis. Julia software is available to set up constraints sets and compute the <a href="https://petersbas.github.io/GeneralizedMinkowskiSetDocs/">projection onto the Generalized Minkowski Set</a>.</p>
+<figure class="scholmd-float scholmd-figure" id="fig:escalator">
+<div class="scholmd-float-content"><figure class="scholmd-subfig" style="display: inline-block; width: 70%">
+<img src="Figures/VideoEscalator/escalator_decomposition.png" />
+</figure></div>
+<div class="scholmd-float-caption"><figcaption><span class="scholmd-caption-head"><span class="scholmd-caption-head-prefix">Figure</span><span class="scholmd-caption-head-label">5</span></span><span class="scholmd-caption-text">Projection of the original video onto a generalized Minkowski set. Each of the components contain either a background or anomaly (moving people).</span></figcaption></div>
 </figure>
 <p><a href="https://arxiv.org/pdf/1903.03942">Generalized Minkowski sets for the regularization of inverse problems (preprint)</a></p>
-<p><a href="https://arxiv.org/pdf/1902.09699">Algorithms and software for projections onto intersections of convex and non-convex sets with applications to inverse problems (preprint)</a></p>
-<p><a href="https://library.seg.org/doi/abs/10.1190/geo2018-0192.1">Projection methods and applications for seismic nonlinear inverse problems with multiple constraints</a></p>
-<p><a href="https://library.seg.org/doi/abs/10.1190/tle36010094.1">Constraints versus penalties for edge-preserving full-waveform inversion</a> / <a href="https://www.slim.eos.ubc.ca/Publications/Public/Journals/TheLeadingEdge/2016/peters2016cvp/peters2016cvp.pdf">preprint</a></p>
-<p><a href="http://www.earthdoc.org/publication/publicationdetails/?publication=80659">Constrained Waveform Inversion of Colocated VSP and Surface Seismic Data</a> / <a href="https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2015/smithyman2015EAGEcwi/smithyman2015EAGEcwi.pdf">preprint</a></p>
 <h2 id="soft">Software</h2>
 <p><a href="https://petersbas.github.io/SetIntersectionProjectionDocs/">SetIntersectionProjection</a></p>
 <ul>
@@ -156,6 +178,7 @@
 <li>Simple way of setting up constraints. Software will provide a projector onto the intersection</li>
 <li>Use projector for any suitable optimization problem</li>
 <li>Contains example of full-waveform inversion, image inpainting/deblurring/denoising, image desaturation</li>
+<li>Tested for computational domains of up to <span class="math scholmd-math-inline">\(400^3\)</span></li>
 </ul>
 <p><br /><a href="https://petersbas.github.io/GeneralizedMinkowskiSetDocs/">Generalized Minkowski Set projections</a></p>
 <ul>
@@ -173,7 +196,7 @@
 </figure><figure class="scholmd-subfig" style="display: inline-block; width: 35%">
 <img src="Figures/Video/true_plus_segmentation_bear_xy.png" />
 </figure></div>
-<div class="scholmd-float-caption"><figcaption><span class="scholmd-caption-head"><span class="scholmd-caption-head-prefix">Figure</span><span class="scholmd-caption-head-label">5</span></span><span class="scholmd-caption-text">Video segmentation of a 4D RGB video in one go. There is only a single video in the entire dataset that has 3 annotated slices. Prediction+data on the right. Uses <a href="#compnet">HyperNet</a></span></figcaption></div>
+<div class="scholmd-float-caption"><figcaption><span class="scholmd-caption-head"><span class="scholmd-caption-head-prefix">Figure</span><span class="scholmd-caption-head-label">6</span></span><span class="scholmd-caption-text">Video segmentation of a 4D RGB video in one go. There is only a single video in the entire dataset that has 3 annotated slices. Prediction+data on the right. Uses <a href="#compnet">HyperNet</a></span></figcaption></div>
 </figure>
 <p>.</p>
 <div class="references">
@@ -209,6 +232,7 @@ MathJax.Hub.Config({
 });
 </script>
 <script src="https://www.slim.eos.ubc.ca/Publications/Resources/ScholMD/js/slimweb-scholmd-scripts.js"></script>
+<script src="https://slimgroup.slim.gatech.edu/MathJax/MathJax.js?config=TeX-AMS_HTML-full" type="text/javascript"></script>
 </div>
 </body>
 </html>
