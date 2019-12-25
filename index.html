@@ -96,7 +96,7 @@
 </ul>
 <h3 id="past">Past:</h3>
 <ul>
-<li>Scientific Computing, Applied and Industrial Mathematics (SCAIM) Seminar Series, UBC, October 29 2019</li>
+<li>Scientific Computing, Applied and Industrial Mathematics (SCAIM) Seminar Series, UBC, October 29 2019 <a href="https://www.slideshare.net/BasPeters11/learning-from-a-few-largescale-partial-examples-computational-tools-regularization-and-network-design?qid=63f82a0e-9ee2-4a61-8cbb-94cb844e9a00&amp;v=&amp;b=&amp;from_search=1">slides</a></li>
 <li>Does shallow geological knowledge help neural-networks to predict deep units? [Society of Exploration Geophysicists, Annual meeting 2019]</li>
 <li>A numerical solver for least-squares sub-problems in 3D wavefield reconstruction inversion and related problem formulations [Society of Exploration Geophysicists, Annual meeting 2019]</li>
 <li>Automatic classification of geologic units in seismic images using partially interpreted examples [81st EAGE Conference and Exhibition 2019]</li>
@@ -113,7 +113,6 @@
 </figure></div>
 <div class="scholmd-float-caption"><figcaption><span class="scholmd-caption-head"><span class="scholmd-caption-head-prefix">Figure</span><span class="scholmd-caption-head-label">1</span></span><span class="scholmd-caption-text">Overview of the design of HyperNet. Memory consumption of various networks on the right.</span></figcaption></div>
 </figure>
-<p><a href="https://arxiv.org/pdf/1905.10484">Fully Hyperbolic Convolutional Neural Networks</a></p>
 <p>The core of hypernet is a leapfrog discretization of a nonlinear telegraph equation, so the forward reads 
 <span class="math scholmd-math-display" style="display: block;">\[
 \begin{equation*}
@@ -127,6 +126,7 @@
 \end{equation*}
 \]</span>
  Note that <span class="math scholmd-math-inline">\(\TW_j\)</span> is the identity if we do not change resolution/channels. Full reversibility allows us to recompute the states during backpropagation so we do not need to store all states; something that standard implementations of reverse-mode automatic differentation need to do for gradient computations.</p>
+<p><a href="https://arxiv.org/pdf/1905.10484">Fully Hyperbolic Convolutional Neural Networks</a></p>
 <h2 id="compvisgeo">Deep-learning based computer vision for geoscience applications</h2>
 <p>Collaborators: Eldad Haber &amp; Justin Granek. For this project we develop methods to be able to apply deep neural-networks to geoscience problems. We worked on techniques to deal with <em>i)</em> data with sparse labels <em>ii)</em> including prior knowledge via regularization of the output of a network while training, in order to mitigate a lack of labels.</p>
 <figure class="scholmd-float scholmd-figure" id="fig:seismic">
