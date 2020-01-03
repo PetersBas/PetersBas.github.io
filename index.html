@@ -125,8 +125,35 @@
 \TY_j = \TW_j^{-1} \bigg[ 2 \TW_{j+1} \TY_{j+1} - h^2 \TK_{j+2}^\top  f ( \TK_{j+2} \TW_{j+1} \TY_{j+1}  ) - \TY_{j+2} \bigg].
 \end{equation*}
 \]</span>
- Note that <span class="math scholmd-math-inline">\(\TW_j\)</span> is the identity if we do not change resolution/channels. Full reversibility allows us to recompute the states during backpropagation so we do not need to store all states; something that standard implementations of reverse-mode automatic differentation need to do for gradient computations.</p>
+ Note that <span class="math scholmd-math-inline">\(\TW_j\)</span> is the identity if we do not change resolution/channels. Full reversibility allows us to recompute the states during backpropagation so we do not need to store all states; something that standard implementations of reverse-mode automatic differentiation need to do for gradient computations.</p>
 <p><a href="https://arxiv.org/pdf/1905.10484">Fully Hyperbolic Convolutional Neural Networks</a></p>
+<p>The above reduces the memory growth of the network states with an increasing number of layers and coarsening steps from linear to a constant. In some cases, however, the network weights also cause memory problems. For example, if the input to a fully reversible network has 3 spatial/temporal dimensions, each time we coarsen inside the network via an orthogonal transform, the number of channels increases by <span class="math scholmd-math-inline">\(8\times\)</span> and the number of convolutional kernels increases by <span class="math scholmd-math-inline">\(64\times\)</span>. Using multiple coarsenings in a network makes the number of convolutional kernels and the associated memory explode.</p>
+<p>To mitigate this issue, we introduced a <em>block-low-rank</em> parameterization of the convolutional kernels via the network layer. For instance, if there are three input channels <span class="math scholmd-math-inline">\(\TY_i\)</span>, there would standardly be nine convolutions to output nine channels as well. However, a symmetric <em>block-low-rank</em> parameterization lets us tune the number of kernels as illustrated below. Each <span class="math scholmd-math-inline">\(K(\Ttheta)\)</span> is a convolution matrix. The block-Toeplitz matrix is therefore a flattening of the 5D tensor of all convolutional kernels. 
+<span class="math scholmd-math-display" style="display: block;">\[
+\begin{equation*}
+\begin{aligned}
+\begin{bmatrix}
+K(\Ttheta^{1,1})^\top &amp; K(\Ttheta^{2,1})^\top\\
+K(\Ttheta^{1,2})^\top &amp; K(\Ttheta^{2,2})^\top\\
+K(\Ttheta^{1,3})^\top &amp; K(\Ttheta^{2,3})^\top
+\end{bmatrix}
+f \bigg(
+\begin{bmatrix}
+K(\Ttheta^{1,1}) &amp; K(\Ttheta^{1,2}) &amp; K(\Ttheta^{1,3})\\
+K(\Ttheta^{2,1}) &amp; K(\Ttheta^{2,2}) &amp; K(\Ttheta^{2,3})\\
+\end{bmatrix}
+\begin{bmatrix}
+Y^1 \\
+Y^2 \\
+Y^3 \\
+\end{bmatrix} \bigg).
+\end{aligned}
+\end{equation*}
+\]</span>
+ The pointwise nonlinear activation function is denoted by <span class="math scholmd-math-inline">\(f(\cdot)\)</span>. The linear algebraic notation also shows that this is a generalization of various squeeze-expand and bottleneck layers that were previously proposed. We train in factorized form directly; no low-rank approximations need to be computed. Note also that the above is not a low-rank approximation of individual kernels.</p>
+<p><span class="math scholmd-math-inline">\(\TK\)</span> denotes the block-toeplitz matrix containing all convolutions, and there are <span class="math scholmd-math-inline">\(m \times n\)</span> blocks where we assume <span class="math scholmd-math-inline">\(m \leq n\)</span>. There are <span class="math scholmd-math-inline">\(mn\)</span> convolutional kernels, and the block-rank of <span class="math scholmd-math-inline">\(\TK^\top \TK\)</span> is at most <span class="math scholmd-math-inline">\(m\)</span>, while the number of unique kernels is at most <span class="math scholmd-math-inline">\((n^2 + n)/2\)</span> and independent of <span class="math scholmd-math-inline">\(m\)</span>. Note that non-negative point-wise activation functions <span class="math scholmd-math-inline">\(f(\cdot)\)</span> preserve symmetry and positive-semidefiniteness of <span class="math scholmd-math-inline">\(\TK^\top \TK\)</span>.</p>
+<p>The combination of fully reversible networks and symmetric block-low-rank layers allows us to train networks on larger inputs with more coarsening levels while training directly in compressed/factorized form leads to competitive results.</p>
+<p><a href="https://arxiv.org/abs/1912.12137">Symmetric block-low-rank layers for fully reversible multilevel neural networks</a></p>
 <h2 id="compvisgeo">Deep-learning based computer vision for geoscience applications</h2>
 <p>Collaborators: Eldad Haber &amp; Justin Granek. For this project we develop methods to be able to apply deep neural-networks to geoscience problems. We worked on techniques to deal with <em>i)</em> data with sparse labels <em>ii)</em> including prior knowledge via regularization of the output of a network while training, in order to mitigate a lack of labels.</p>
 <figure class="scholmd-float scholmd-figure" id="fig:seismic">
@@ -209,7 +236,7 @@
 </figure><figure class="scholmd-subfig" style="display: inline-block; width: 35%">
 <img src="Figures/Video/true_plus_segmentation_bear_xy.png" />
 </figure></div>
-<div class="scholmd-float-caption"><figcaption><span class="scholmd-caption-head"><span class="scholmd-caption-head-prefix">Figure</span><span class="scholmd-caption-head-label">6</span></span><span class="scholmd-caption-text">Video segmentation of a 4D RGB video in one go. There is only a single video in the entire dataset that has 3 annotated slices. One crossection of the prediction+data is shown on the right. Uses <a href="#compnet">HyperNet</a></span></figcaption></div>
+<div class="scholmd-float-caption"><figcaption><span class="scholmd-caption-head"><span class="scholmd-caption-head-prefix">Figure</span><span class="scholmd-caption-head-label">6</span></span><span class="scholmd-caption-text">Video segmentation of a 4D RGB video in one go. There is only a single video in the entire dataset that has 3 annotated slices. One cross section of the prediction+data is shown on the right. Uses <a href="#compnet">HyperNet</a></span></figcaption></div>
 </figure>
 <p>.</p>
 <div class="references">
