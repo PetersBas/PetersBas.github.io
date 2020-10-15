@@ -1,8 +1,8 @@
 Bas Peters
 
-PhD, University of British Columbia (2019)
-MSc and BSc, Utrecht University, The Netherlands 
-[LinkedIn](https://www.linkedin.com/in/bas-peters-b26ba3a/) | [Google Scholar](https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao) | [GitHub](https://github.com/PetersBas)
+- PhD, University of British Columbia (2019)
+- MSc and BSc, Utrecht University, The Netherlands
+- [LinkedIn](https://www.linkedin.com/in/bas-peters-b26ba3a/) | [Google Scholar](https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao) | [GitHub](https://github.com/PetersBas)
 
 Hi! I am a visiting assistant professor in the mathematics department at Emory University. Previously, I worked for [Computational Geosciences Inc.](http://www.compgeoinc.com). I was a graduate student in the [SLIM](http://slim.gatech.edu) group at the University of British Columbia (currently at Georgia Tech). My research interests include 
 *i*) computational methods to design and train neural networks for large scale inputs; 
