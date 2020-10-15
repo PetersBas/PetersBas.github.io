@@ -9,11 +9,11 @@ Hi! I am a visiting assistant professor in the mathematics department at Emory U
 *ii)* constrained optimization for the regularization of inverse problems and neural networks; 
 *iii*) applications in the geosciences and remote sensing.
 
-##Teaching
+## Teaching
 Emory University: [Linear Algebra MATH221](https://www.coursicle.com/emory/professors/Bas+Peters/) (all class info on Canvas)
 
 
-##Publications #
+## Publications
 Please see my [scholar page.](https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao)
 
 ## Recent presentations (2019)
@@ -84,7 +84,7 @@ In case it is difficult to describe a model/image using a set or intersection of
 
 [Generalized Minkowski sets for the regularization of inverse problems (preprint)](https://arxiv.org/pdf/1903.03942)
 
-##Software
+## Software
 
 [SetIntersectionProjection](https://petersbas.github.io/SetIntersectionProjectionDocs/)
 
