@@ -2,9 +2,10 @@ Bas Peters
 
 - PhD, University of British Columbia (2019)
 - MSc and BSc, Utrecht University, The Netherlands
-- [LinkedIn](https://www.linkedin.com/in/bas-peters-b26ba3a/) | [Google Scholar](https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao) | [GitHub](https://github.com/PetersBas)
 
-Hi! I am a visiting assistant professor in the mathematics department at Emory University. Previously, I worked for [Computational Geosciences Inc.](http://www.compgeoinc.com). I was a graduate student in the [SLIM](http://slim.gatech.edu) group at the University of British Columbia (currently at Georgia Tech). My research interests include 
+[LinkedIn](https://www.linkedin.com/in/bas-peters-b26ba3a/) | [Google Scholar](https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao) | [GitHub](https://github.com/PetersBas)
+
+Hi! I am a visiting assistant professor in the [mathematics department at Emory University](https://www.math.emory.edu/home/). Previously, I worked for [Computational Geosciences Inc.](http://www.compgeoinc.com). I was a graduate student in the [SLIM](http://slim.gatech.edu) group at the University of British Columbia (currently at Georgia Tech). My research interests include 
 *i*) computational methods to design and train neural networks for large scale inputs; 
 *ii)* constrained optimization for the regularization of inverse problems and neural networks; 
 *iii*) applications in the geosciences and remote sensing.
@@ -16,9 +17,10 @@ Emory University: [Linear Algebra MATH221](https://www.coursicle.com/emory/profe
 ## Publications
 Please see my [scholar page.](https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao)
 
-## Recent presentations (2019)
+## Recent presentations (2019-2020)
 ### Upcoming:
 - [The Weaker the Better: Weak Supervision for Training Neural Networks for Seismic Interpretation; an Approach via Constrained Optimization](https://www.gshtx.org/SharedContent/Events/Event_Display.aspx?EventKey=16ba1771-dc38-4322-a813-a17c94463b49&WebsiteKey=955f17e6-46ad-4401-acbd-2af6c393752b); [Data Science and Machine Learning special interest group Geophysical Society of Houston. October 28, 2020]
+- [Constraints and optimization for weakly supervised deep-learning from few data and fewer labels](https://erlweb.mit.edu/events/fish-constraints-and-optimization-weakly-supervised-deep-learning-few-data-and-fewer-labels) MIT ERL FISH Seminar; October 23, 2020.
 - [Scientific Computing Seminar, Emory University](http://www.mathcs.emory.edu/site/scicomp/schedule/); Oct 16, 2020.
 - A vision approach to mineral prospectivity mapping using reversible neural networks [Workshop on Machine Learning/Artificial Intelligence in Mineral Exploration; Society of Exploration Geophysicists Annual Meeting; Thursday, Oct 15, 2020]
 - Shortcutting inversion-based near-surface characterization workflows using deep learning [Special Session on Machine Learning in the Near Surface; Society of Exploration Geophysicists Annual Meeting; Oct 13, 2020]
@@ -36,13 +38,12 @@ Please see my [scholar page.](https://scholar.google.ca/citations?user=gPVDmBEAA
 ## Computational methods and design of deep neural networks
 Collaborators: Keegan Lensink & Eldad Haber. Research focusses on developing new networks that require less memory for weights and for network states while computing gradients of loss functions.
 
-
-![](Figures/Video/Wnet_forward.png)
-![](Figures/Video/NetworkMemory3D.png)
-:Overview of the design of HyperNet. Memory consumption of various networks on the right.
+<img src="Figures/Video/Wnet_forward.png" width=400 align=left>
+<img src="Figures/Video/NetworkMemory3D.png" width=400 align=right>
 
 [Fully Hyperbolic Convolutional Neural Networks](https://arxiv.org/pdf/1905.10484)
 [Symmetric block-low-rank layers for fully reversible multilevel neural networks](https://arxiv.org/abs/1912.12137)
+
 
 ## Deep-learning based computer vision for geoscience applications
 Collaborators: Eldad Haber & Justin Granek. For this project we develop methods to be able to apply deep neural-networks to geoscience problems. We worked on techniques to deal with *i)* data with sparse labels *ii)* including prior knowledge via regularization of the output of a network while training, in order to mitigate a lack of labels. 
