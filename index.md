@@ -38,20 +38,19 @@ Please see my [scholar page.](https://scholar.google.ca/citations?user=gPVDmBEAA
 ## Computational methods and design of deep neural networks
 Collaborators: Keegan Lensink & Eldad Haber. Research focusses on developing new networks that require less memory for weights and for network states while computing gradients of loss functions.
 
-<img src="Figures/Video/Wnet_forward.png" width=400 align=left>
-<img src="Figures/Video/NetworkMemory3D.png" width=400 align=right>
+<img src="Figures/Video/Wnet_forward.png" width=400 align=center>
+<img src="Figures/Video/NetworkMemory3D.png" width=400 align=center>
+
 
 [Fully Hyperbolic Convolutional Neural Networks](https://arxiv.org/pdf/1905.10484)
 [Symmetric block-low-rank layers for fully reversible multilevel neural networks](https://arxiv.org/abs/1912.12137)
 
-
 ## Deep-learning based computer vision for geoscience applications
 Collaborators: Eldad Haber & Justin Granek. For this project we develop methods to be able to apply deep neural-networks to geoscience problems. We worked on techniques to deal with *i)* data with sparse labels *ii)* including prior knowledge via regularization of the output of a network while training, in order to mitigate a lack of labels. 
 
-![](Figures/Seismic/Figure2a.png)
-![](Figures/Seismic/Figure2c.png)
-![](Figures/Seismic/Figure4.png)
-:Semantic segmentation of seismic images into lithological units of interest. Training data are slices from a 3D volume. There are 24 training images that each have 2 associated boreholes. This result uses regularization of the network output to mitigate the lack of labeled data.
+<img src="Figures/Seismic/Figure2a.png" width=400 align=center>
+<img src="Figures/Seismic/Figure2c.png" width=400 align=center>
+<img src="Figures/Seismic/Figure4.png" width=400 align=center>
 
 [Automatic Classification of Geologic Units in Seismic Images Using Partially Interpreted Examples](http://www.earthdoc.org/publication/publicationdetails/?publication=97269) / [arXiv](https://arxiv.org/pdf/1901.03786)
 
@@ -80,7 +79,7 @@ We incorporate prior knowledge into the inverse problems via a projection of a v
 In case it is difficult to describe a model/image using a set or intersection of sets as above, we can use an additive model. Therefore, we introduced a generalization of the Minkowski set, which allows us to construct a 'complicated' model/image from two 'simple' ones. We can add multiple pieces of prior knowledge about each component as well multiple constraints on their sum. In spirit, this approach generalized ideas from cartoon-texture decomposition, robust prinipal component analysis, and morphological component analysis. Julia software is available to set up constraints sets and compute the [projection onto the Generalized Minkowski Set](https://petersbas.github.io/GeneralizedMinkowskiSetDocs/).
 
 ![](Figures/VideoEscalator/escalator_decomposition.png)
-:Segmentation of a greyscale video as the projection of the entire original video onto a generalized Minkowski set. Each of the components contain either a background or anomaly (moving people). 
+
 
 
 [Generalized Minkowski sets for the regularization of inverse problems (preprint)](https://arxiv.org/pdf/1903.03942)
