@@ -9,7 +9,7 @@ Hi! I am a visiting assistant professor in the [mathematics department at Emory 
 
 My research interests include 
 
-- computational methods to design and train neural networks for large scale inputs
+- [computational methods to design and train neural networks for large scale inputs](##computational-methods)
 - constrained optimization for the regularization of inverse problems and neural networks
 - reinforcement learning & optimal control 
 - applications in the geosciences and remote sensing
@@ -18,6 +18,7 @@ My research interests include
 ## Teaching
 Emory University: 
 Fall 2020: [Linear Algebra MATH221](https://www.coursicle.com/emory/professors/Bas+Peters/) (all class info on Canvas)
+
 Spring 2021: [Linear Algebra MATH221](https://www.coursicle.com/emory/professors/Bas+Peters/) (all class info on Canvas)
 
 ## Publications
@@ -38,7 +39,7 @@ Please see my [scholar page.](https://scholar.google.ca/citations?user=gPVDmBEAA
 - Generalized Minkowski sets for the regularization of inverse problems (SIAM Conference on Mathematical and Computational Issues in the Geosciences, 2019) [video](https://www.pathlms.com/siam/courses/11267/sections/14618/video_presentations/128671) [slides](https://cdn.fs.pathlms.com/WpyqzDxDQmazQeMb3KRu)
 - Networks, loss-functions, regularization, and software for machine learning in the geosciences [Machine learning in solid earth geoscience, hosted by Los Alamos National Laboratory in Santa Fe, 2019]
 
-## Computational methods and design of deep neural networks
+## computational methods
 Collaborators: Keegan Lensink & Eldad Haber. Research focusses on developing fully reversible and invertible networks that have constant memory requirements as a function of network depth. This topic also includes methods for training networks in a 'factorized' form to reduce the memory required for weights.
 
 <img src="Figures/Video/Wnet_forward.png" width=400 align=center>
