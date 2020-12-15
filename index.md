@@ -5,28 +5,29 @@ Bas Peters
 
 [LinkedIn](https://www.linkedin.com/in/bas-peters-b26ba3a/) | [Google Scholar](https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao) | [GitHub](https://github.com/PetersBas)
 
-Hi! I am a visiting assistant professor in the [mathematics department at Emory University](https://www.math.emory.edu/home/). Previously, I worked for [Computational Geosciences Inc.](http://www.compgeoinc.com). I was a graduate student in the [SLIM](http://slim.gatech.edu) group at the University of British Columbia (currently at Georgia Tech). My research interests include 
-*i*) computational methods to design and train neural networks for large scale inputs; 
-*ii)* constrained optimization for the regularization of inverse problems and neural networks; 
-*iii*) applications in the geosciences and remote sensing.
+Hi! I am a visiting assistant professor in the [mathematics department at Emory University](https://www.math.emory.edu/home/). Previously, I worked for [Computational Geosciences Inc.](http://www.compgeoinc.com). I was a graduate student in the [SLIM](http://slim.gatech.edu) group at the University of British Columbia (currently at Georgia Tech). 
+My research interests include 
+*i*) computational methods to design and train neural networks for large scale inputs
+*ii)* constrained optimization for the regularization of inverse problems and neural networks;
+*iii*) reinforcement learning & optimal control 
+*iv*) applications in the geosciences and remote sensing.
+
 
 ## Teaching
-Emory University: [Linear Algebra MATH221](https://www.coursicle.com/emory/professors/Bas+Peters/) (all class info on Canvas)
-
+Emory University: 
+Fall 2020: [Linear Algebra MATH221](https://www.coursicle.com/emory/professors/Bas+Peters/) (all class info on Canvas)
+Spring 2021: [Linear Algebra MATH221](https://www.coursicle.com/emory/professors/Bas+Peters/) (all class info on Canvas)
 
 ## Publications
 Please see my [scholar page.](https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao)
 
 ## Recent presentations (2019-2020)
-### Upcoming:
+
 - [The Weaker the Better: Weak Supervision for Training Neural Networks for Seismic Interpretation; an Approach via Constrained Optimization](https://www.gshtx.org/SharedContent/Events/Event_Display.aspx?EventKey=16ba1771-dc38-4322-a813-a17c94463b49&WebsiteKey=955f17e6-46ad-4401-acbd-2af6c393752b); [Data Science and Machine Learning special interest group Geophysical Society of Houston. October 28, 2020]
 - [Constraints and optimization for weakly supervised deep-learning from few data and fewer labels](https://erlweb.mit.edu/events/fish-constraints-and-optimization-weakly-supervised-deep-learning-few-data-and-fewer-labels) MIT ERL FISH Seminar; October 23, 2020.
 - [Scientific Computing Seminar, Emory University](http://www.mathcs.emory.edu/site/scicomp/schedule/); Oct 16, 2020.
 - A vision approach to mineral prospectivity mapping using reversible neural networks [Workshop on Machine Learning/Artificial Intelligence in Mineral Exploration; Society of Exploration Geophysicists Annual Meeting; Thursday, Oct 15, 2020]
 - Shortcutting inversion-based near-surface characterization workflows using deep learning [Special Session on Machine Learning in the Near Surface; Society of Exploration Geophysicists Annual Meeting; Oct 13, 2020]
-
-### Past:
-
 - Novel deep learning architectures and problem formulations for the geosciences. Department of Earth, Ocean and Atmospheric Sciences Seminar; University of British Columbia. Monday, March 9, 2020.
 - Scientific Computing, Applied and Industrial Mathematics (SCAIM) Seminar Series, UBC, October 29 2019 [slides](https://www.slideshare.net/BasPeters11/learning-from-a-few-largescale-partial-examples-computational-tools-regularization-and-network-design?qid=63f82a0e-9ee2-4a61-8cbb-94cb844e9a00&v=&b=&from_search=1)
 - Does shallow geological knowledge help neural-networks to predict deep units? [Society of Exploration Geophysicists, Annual meeting 2019]
@@ -36,7 +37,7 @@ Please see my [scholar page.](https://scholar.google.ca/citations?user=gPVDmBEAA
 - Networks, loss-functions, regularization, and software for machine learning in the geosciences [Machine learning in solid earth geoscience, hosted by Los Alamos National Laboratory in Santa Fe, 2019]
 
 ## Computational methods and design of deep neural networks
-Collaborators: Keegan Lensink & Eldad Haber. Research focusses on developing new networks that require less memory for weights and for network states while computing gradients of loss functions.
+Collaborators: Keegan Lensink & Eldad Haber. Research focusses on developing fully reversible and invertible networks that have constant memory requirements as a function of network depth. This topic also includes methods for training networks in a 'factorized' form to reduce the memory required for weights.
 
 <img src="Figures/Video/Wnet_forward.png" width=400 align=center>
 <img src="Figures/Video/NetworkMemory3D.png" width=400 align=center>
@@ -58,17 +59,18 @@ Collaborators: Eldad Haber & Justin Granek. For this project we develop methods 
 
 [Does shallow geological knowledge help neural-networks to predict deep units?](https://library.seg.org/doi/10.1190/segam2019-3216640.1) / [arXiv](https://arxiv.org/pdf/1904.04413)
 
-![](Figures/SeismicHorizon/Figure11.png)
+<img src="Figures/SeismicHorizon/Figure11.png" width=500 align=center>
+
 :Detecting horizons (interfaces) of interest in seismic images. There are a number of training images and each has a few labels (seed points). Our method performs better than methods not based on learning, especially in areas where there are large gaps in the labels.
 
 [Multiresolution neural networks for tracking seismic horizons from few training images](https://library.seg.org/doi/10.1190/INT-2018-0225.1) / [arXiv](https://arxiv.org/pdf/1812.11092)
 
-## Constrained optimization for regularizing imaging inverse problems
+## Constrained optimization for regularizing inverse problems & neural networks
 Collaborator: Felix J. Herrmann. 
 
-We incorporate prior knowledge into the inverse problems via a projection of a vector onto an intersection of multiple convex and non-convex sets. Each sets may include a different linear operator, such as discrete derivative matrices, Fourier/DCT/wavelet/curvelet transforms. The projection approach has the advantage that each sets is defined independently of all others; no trade-off/balancing parameters are required. Julia software is available as the [SetIntersectionProjection](https://petersbas.github.io/SetIntersectionProjectionDocs/) package.
+We incorporate prior knowledge into the inverse problems via a projection of a vector onto an intersection of multiple convex and non-convex sets. Each sets may include a different linear operator, such as discrete derivative matrices, Fourier/DCT/wavelet/curvelet transforms. The projection approach has the advantage that each sets is defined independently of all others; no trade-off/balancing parameters are required. Julia software is available as the [SetIntersectionProjection](https://petersbas.github.io/SetIntersectionProjectionDocs/) package. Applications include image/video processing and non-convex geophysical parameter estimation problems.
 
-![](Figures/SIP/deblurring_inpainting_results2.jpg)
+<img src="Figures/SIP/deblurring_inpainting_results2.jpg" width=800 align=center>
 :Reconstructing images from noisy, blurred, and missing pixels. Shows basis-pursuit denoise using wavelets, versus our method (PARSDMM): projection onto an intersection of constraint sets that were learned from examples.
 
  - [Algorithms and software for projections onto intersections of convex and non-convex sets with applications to inverse problems (preprint)](https://arxiv.org/pdf/1902.09699)
@@ -104,4 +106,20 @@ In case it is difficult to describe a model/image using a set or intersection of
 
 ## Numerical linear algebra and PDE-constrained optimization
 Collaborators: Felix J. Herrmann & Tristan van Leeuwen
-Under Construction
+
+We investigated how and when quadratic penalty methods offer andvantages over reduced-Lagrangian (adjoint-state) methods for non-convex seismic PDE-constrained optimization problems, in terms of the quality of the solution. 
+
+[Wave-equation Based Inversion with the Penalty Method-Adjoint-state Versus Wavefield-reconstruction Inversion](https://www.earthdoc.org/content/papers/10.3997/2214-4609.20140704)/[preprint](https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2014/peters2014EAGEweb/peters2014EAGEweb.pdf)
+[A new take on FWI-wavefield reconstruction inversion](https://www.earthdoc.org/content/papers/10.3997/2214-4609.20140703)/[preprint](https://www.slim.eos.ubc.ca/Publications/Public/Conferences/EAGE/2014/leeuwen2014EAGEntf/leeuwen2014EAGEntf.pdf)
+
+We also did some work in numerical linear algebra, aimed at seismic parameter estimation problems. We developed a sparse hessian approximation for quadratic-penalty method sub-problems that arise from estimating two different physical parameters simultaneously. This leads to challenges because different physical parameters can have scalings that are orders of magnitudes apart.
+
+[A sparse reduced Hessian approximation for multi-parameter wavefield reconstruction inversion](https://library.seg.org/doi/abs/10.1190/segam2014-1667.1)/[preprint](https://slim.gatech.edu/Publications/Public/Conferences/SEG/2014/peters2014SEGsrh/peters2014SEGsrh.pdf)
+
+I developed a solver for block-structured least-squares problems, with slightly more rows than columns. These problems arise when solving for the states/fields when reduced quadratic-penalty methods are employed for time-harmonic PDE-constrained optimization problems. This is the first work that solves such problems in 3D and is based on a identity+low-rank factorization & Sherman-Morrison-Woodbury.
+
+[A numerical solver for least-squares sub-problems in 3D wavefield reconstruction inversion and related problem formulations](https://library.seg.org/doi/abs/10.1190/segam2019-3216638.1)/[preprint](https://slim.gatech.edu/Publications/Public/Conferences/SEG/2019/peters2019SEGans/peters2019SEGans.pdf)
+
+
+
+[Parallel reformulation of the sequential adjoint-state method](https://library.seg.org/doi/abs/10.1190/segam2016-13966771.1)/[preprint](https://slim.gatech.edu/Publications/Public/Conferences/SEG/2016/peters2016SEGprs/peters2016SEGprs.pdf)
