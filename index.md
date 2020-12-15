@@ -6,11 +6,13 @@ Bas Peters
 [LinkedIn](https://www.linkedin.com/in/bas-peters-b26ba3a/) | [Google Scholar](https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao) | [GitHub](https://github.com/PetersBas)
 
 Hi! I am a visiting assistant professor in the [mathematics department at Emory University](https://www.math.emory.edu/home/). Previously, I worked for [Computational Geosciences Inc.](http://www.compgeoinc.com). I was a graduate student in the [SLIM](http://slim.gatech.edu) group at the University of British Columbia (currently at Georgia Tech). 
+
 My research interests include 
-*i*) computational methods to design and train neural networks for large scale inputs
-*ii)* constrained optimization for the regularization of inverse problems and neural networks;
-*iii*) reinforcement learning & optimal control 
-*iv*) applications in the geosciences and remote sensing.
+
+- computational methods to design and train neural networks for large scale inputs
+- constrained optimization for the regularization of inverse problems and neural networks
+- reinforcement learning & optimal control 
+- applications in the geosciences and remote sensing
 
 
 ## Teaching
