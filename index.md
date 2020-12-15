@@ -32,6 +32,7 @@ Please see my [scholar page.](https://scholar.google.ca/citations?user=gPVDmBEAA
 - [Scientific Computing Seminar, Emory University](http://www.mathcs.emory.edu/site/scicomp/schedule/); Oct 16, 2020.
 - A vision approach to mineral prospectivity mapping using reversible neural networks [Workshop on Machine Learning/Artificial Intelligence in Mineral Exploration; Society of Exploration Geophysicists Annual Meeting; Thursday, Oct 15, 2020]
 - Shortcutting inversion-based near-surface characterization workflows using deep learning [Special Session on Machine Learning in the Near Surface; Society of Exploration Geophysicists Annual Meeting; Oct 13, 2020]
+- Deep connections between learning from limited labels & physical parameter estimation - inspiration for regularization, Visual Learning with Limited Labels workshop at CVPR 2020.
 - [Fully Reversible Neural Networks for Large-Scale Surface and Sub-Surface Characterization via Remote Sensing, AI for Earth Sciences workshop at ICLR 2020](https://ai4earthscience.github.io/iclr-2020-workshop/) [video](https://slideslive.com/38926360/fully-reversible-neural-networks-for-largescale-surface-and-subsurface-characterization-via-remote-sensing)
 - Novel deep learning architectures and problem formulations for the geosciences. Department of Earth, Ocean and Atmospheric Sciences Seminar; University of British Columbia. Monday, March 9, 2020.
 - Scientific Computing, Applied and Industrial Mathematics (SCAIM) Seminar Series, UBC, October 29 2019 [slides](https://www.slideshare.net/BasPeters11/learning-from-a-few-largescale-partial-examples-computational-tools-regularization-and-network-design?qid=63f82a0e-9ee2-4a61-8cbb-94cb844e9a00&v=&b=&from_search=1)
@@ -51,8 +52,28 @@ Collaborators: Keegan Lensink & Eldad Haber. Research focusses on developing ful
 [Fully Hyperbolic Convolutional Neural Networks](https://arxiv.org/pdf/1905.10484)
 [Symmetric block-low-rank layers for fully reversible multilevel neural networks](https://arxiv.org/abs/1912.12137)
 
+Applications include video segmentation, (time-lapse) hyperspectral land use classification and generative modeling. The low memory requirements of the fully reversible network allows us to segment a full video in one go. The following example segments a full video, based on three given slices.
+
+<img src="Figures/Video/Label_Bear3D.png" width=300 align=center>
+<img src="Figures/Video/true_plus_segmentation_bear_xy.png" width=300 align=center>
+
 ## Deep-learning based computer vision geoscience and remote sensing applications
-Collaborators: Eldad Haber & Justin Granek. For this project we develop methods to be able to apply deep neural-networks to geoscience problems. We worked on techniques to deal with *i)* data with sparse labels *ii)* including prior knowledge via regularization of the output of a network while training, in order to mitigate a lack of labels. 
+Collaborators: Eldad Haber & Justin Granek. For this project we develop deep learning methods to be able to apply deep neural-networks to geoscience problems. We worked on techniques to deal with 
+
+- training deep networks on data with sparse labels
+- including prior knowledge via regularization of the output of a network while training in order to mitigate a lack of labels
+- learning from datasets that consist of a single (large-scale) example
+
+
+| ------------- | ------------- |
+| <img src="Figures/RemoteSensing/AI_nearsurface_overview_001.jpeg" width=1400 align=center>  | Applications include aquifer mapping using topography, gravitational, magnetic data, as well as various geological maps and point observations of the ground truth.  |
+
+Time-lapse hyperspectral imaging maps a 4D input to a 2D maps of the suface of the earth, in terms of land-use change. 
+<img src="Figures/RemoteSensing/data3D_T1.png" width=200 align=center>
+<img src="Figures/RemoteSensing/data3D_T1.png" width=200 align=center>
+<img src="Figures/RemoteSensing/prediction_true_error_hyperspectral.png" width=400 align=center>
+
+2D/3D geological model building from seismic images and borehole data (labels)
 
 <img src="Figures/Seismic/Figure2a.png" width=400 align=center>
 <img src="Figures/Seismic/Figure2c.png" width=400 align=center>
@@ -64,9 +85,13 @@ Collaborators: Eldad Haber & Justin Granek. For this project we develop methods 
 
 [Does shallow geological knowledge help neural-networks to predict deep units?](https://library.seg.org/doi/10.1190/segam2019-3216640.1) / [arXiv](https://arxiv.org/pdf/1904.04413)
 
-<img src="Figures/SeismicHorizon/Figure11.png" width=500 align=center>
+| ------------- | ------------- |
+| Detecting horizons (interfaces) of interest in seismic images. There are a number of training images and each has a few labels (seed points). Our method performs better than methods not based on learning, especially in areas where there are large gaps in the labels.  | <img src="Figures/SeismicHorizon/Figure11.png" width=2000 align=center>  |
 
-:Detecting horizons (interfaces) of interest in seismic images. There are a number of training images and each has a few labels (seed points). Our method performs better than methods not based on learning, especially in areas where there are large gaps in the labels.
+
+
+
+
 
 [Multiresolution neural networks for tracking seismic horizons from few training images](https://library.seg.org/doi/10.1190/INT-2018-0225.1) / [arXiv](https://arxiv.org/pdf/1812.11092)
 
@@ -75,8 +100,10 @@ Collaborator: Felix J. Herrmann.
 
 We incorporate prior knowledge into the inverse problems via a projection of a vector onto an intersection of multiple convex and non-convex sets. Each sets may include a different linear operator, such as discrete derivative matrices, Fourier/DCT/wavelet/curvelet transforms. The projection approach has the advantage that each sets is defined independently of all others; no trade-off/balancing parameters are required. Julia software is available as the [SetIntersectionProjection](https://petersbas.github.io/SetIntersectionProjectionDocs/) package. Applications include image/video processing and non-convex geophysical parameter estimation problems.
 
-<img src="Figures/SIP/deblurring_inpainting_results2.jpg" width=800 align=center>
-:Reconstructing images from noisy, blurred, and missing pixels. Shows basis-pursuit denoise using wavelets, versus our method (PARSDMM): projection onto an intersection of constraint sets that were learned from examples.
+Reconstructing images from noisy, blurred, and missing pixels. Shows basis-pursuit denoise using wavelets, versus our method (PARSDMM): projection onto an intersection of constraint sets that were learned from examples.
+
+<img src="Figures/SIP/deblurring_inpainting_results2.jpg" width=700 align=center>
+
 
  - [Algorithms and software for projections onto intersections of convex and non-convex sets with applications to inverse problems (preprint)](https://arxiv.org/pdf/1902.09699)
  - [Projection methods and applications for seismic nonlinear inverse problems with multiple constraints](https://library.seg.org/doi/abs/10.1190/geo2018-0192.1)
