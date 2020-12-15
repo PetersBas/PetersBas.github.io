@@ -9,15 +9,15 @@ Hi! I am a visiting assistant professor in the [mathematics department at Emory 
 
 My research interests include 
 
-- [computational methods to design and train neural networks for large scale inputs](#computational-methods)
-- [computational methods to design and train neural networks for large scale inputs](##computational-methods)
-- constrained optimization for the regularization of inverse problems and neural networks
+- [computational methods to design and train neural networks for large scale inputs](#computational-methods-for-training-neural-networks-for-large-scale-inputs)
+- [constrained optimization for the regularization of inverse problems and neural networks](#constrained-optimization-for-regularizing-inverse problems-&-neural networks)
 - reinforcement learning & optimal control 
-- applications in the geosciences and remote sensing
+- [deep learning for computer vision applications in the geosciences and remote sensing](#Deep-learning-based-computer-vision-geoscience-and-remote-sensing applications)
 
 
 ## Teaching
 Emory University: 
+
 Fall 2020: [Linear Algebra MATH221](https://www.coursicle.com/emory/professors/Bas+Peters/) (all class info on Canvas)
 
 Spring 2021: [Linear Algebra MATH221](https://www.coursicle.com/emory/professors/Bas+Peters/) (all class info on Canvas)
@@ -32,6 +32,7 @@ Please see my [scholar page.](https://scholar.google.ca/citations?user=gPVDmBEAA
 - [Scientific Computing Seminar, Emory University](http://www.mathcs.emory.edu/site/scicomp/schedule/); Oct 16, 2020.
 - A vision approach to mineral prospectivity mapping using reversible neural networks [Workshop on Machine Learning/Artificial Intelligence in Mineral Exploration; Society of Exploration Geophysicists Annual Meeting; Thursday, Oct 15, 2020]
 - Shortcutting inversion-based near-surface characterization workflows using deep learning [Special Session on Machine Learning in the Near Surface; Society of Exploration Geophysicists Annual Meeting; Oct 13, 2020]
+- [Fully Reversible Neural Networks for Large-Scale Surface and Sub-Surface Characterization via Remote Sensing, AI for Earth Sciences workshop at ICLR 2020](https://ai4earthscience.github.io/iclr-2020-workshop/) [video](https://slideslive.com/38926360/fully-reversible-neural-networks-for-largescale-surface-and-subsurface-characterization-via-remote-sensing)
 - Novel deep learning architectures and problem formulations for the geosciences. Department of Earth, Ocean and Atmospheric Sciences Seminar; University of British Columbia. Monday, March 9, 2020.
 - Scientific Computing, Applied and Industrial Mathematics (SCAIM) Seminar Series, UBC, October 29 2019 [slides](https://www.slideshare.net/BasPeters11/learning-from-a-few-largescale-partial-examples-computational-tools-regularization-and-network-design?qid=63f82a0e-9ee2-4a61-8cbb-94cb844e9a00&v=&b=&from_search=1)
 - Does shallow geological knowledge help neural-networks to predict deep units? [Society of Exploration Geophysicists, Annual meeting 2019]
@@ -40,7 +41,7 @@ Please see my [scholar page.](https://scholar.google.ca/citations?user=gPVDmBEAA
 - Generalized Minkowski sets for the regularization of inverse problems (SIAM Conference on Mathematical and Computational Issues in the Geosciences, 2019) [video](https://www.pathlms.com/siam/courses/11267/sections/14618/video_presentations/128671) [slides](https://cdn.fs.pathlms.com/WpyqzDxDQmazQeMb3KRu)
 - Networks, loss-functions, regularization, and software for machine learning in the geosciences [Machine learning in solid earth geoscience, hosted by Los Alamos National Laboratory in Santa Fe, 2019]
 
-## computational methods
+## Computational methods for training neural networks for large scale inputs
 Collaborators: Keegan Lensink & Eldad Haber. Research focusses on developing fully reversible and invertible networks that have constant memory requirements as a function of network depth. This topic also includes methods for training networks in a 'factorized' form to reduce the memory required for weights.
 
 <img src="Figures/Video/Wnet_forward.png" width=400 align=center>
@@ -50,7 +51,7 @@ Collaborators: Keegan Lensink & Eldad Haber. Research focusses on developing ful
 [Fully Hyperbolic Convolutional Neural Networks](https://arxiv.org/pdf/1905.10484)
 [Symmetric block-low-rank layers for fully reversible multilevel neural networks](https://arxiv.org/abs/1912.12137)
 
-## Deep-learning based computer vision for geoscience applications
+## Deep-learning based computer vision geoscience and remote sensing applications
 Collaborators: Eldad Haber & Justin Granek. For this project we develop methods to be able to apply deep neural-networks to geoscience problems. We worked on techniques to deal with *i)* data with sparse labels *ii)* including prior knowledge via regularization of the output of a network while training, in order to mitigate a lack of labels. 
 
 <img src="Figures/Seismic/Figure2a.png" width=400 align=center>
