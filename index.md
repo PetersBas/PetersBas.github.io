@@ -10,9 +10,9 @@ Hi! I am a visiting assistant professor in the [mathematics department at Emory 
 My research interests include 
 
 - [computational methods to design and train neural networks for large scale inputs](#computational-methods-for-training-neural-networks-for-large-scale-inputs)
-- [constrained optimization for the regularization of inverse problems and neural networks](#constrained-optimization-for-regularizing-inverse problems-&-neural networks)
+- [constrained optimization for the regularization of inverse problems and neural networks](#constrained-optimization-for-regularizing-inverse_problems-&-neural networks)
 - reinforcement learning & optimal control 
-- [deep learning for computer vision applications in the geosciences and remote sensing](#Deep-learning-based-computer-vision-geoscience-and-remote-sensing applications)
+- [deep learning for computer vision applications in the geosciences and remote sensing](#Deep-learning-based-computer-vision-geoscience-and-remote-sensing_applications)
 
 
 ## Teaching
