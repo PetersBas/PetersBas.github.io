@@ -9,6 +9,7 @@ Hi! I am a visiting assistant professor in the [mathematics department at Emory 
 
 My research interests include 
 
+- [computational methods to design and train neural networks for large scale inputs](#computational-methods)
 - [computational methods to design and train neural networks for large scale inputs](##computational-methods)
 - constrained optimization for the regularization of inverse problems and neural networks
 - reinforcement learning & optimal control 
