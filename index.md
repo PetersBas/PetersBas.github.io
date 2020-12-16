@@ -5,15 +5,17 @@ Bas Peters
 
 [LinkedIn](https://www.linkedin.com/in/bas-peters-b26ba3a/) | [Google Scholar](https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao) | [GitHub](https://github.com/PetersBas)
 
-Hi! I am a visiting assistant professor in the [mathematics department at Emory University](https://www.math.emory.edu/home/). Previously, I worked for [Computational Geosciences Inc.](http://www.compgeoinc.com). I was a graduate student in the [SLIM](http://slim.gatech.edu) group at the University of British Columbia (currently at Georgia Tech). 
+| ------------- | ------------- |
+| Hi! I am a visiting assistant professor in the [mathematics department at Emory University](https://www.math.emory.edu/home/). Previously, I worked for [Computational Geosciences Inc.](http://www.compgeoinc.com). I was a graduate student in the [SLIM](http://slim.gatech.edu) group at the University of British Columbia (currently at Georgia Tech).| <img src="Figures/pers/PhotoBas.jpg" width=400 align=right>  |
+
 
 My research interests include 
 
 - [computational methods to design and train neural networks for large scale inputs](#computational-methods-for-training-neural-networks-for-large-scale-inputs)
-- [constrained optimization for the regularization of inverse problems and neural networks](#constrained-optimization-for-regularizing-inverse_problems-&-neural networks)
+- [constrained optimization for the regularization of inverse problems and neural networks](#constrained-optimization-for-regularizing-inverse_problems-&-neural-networks)
 - reinforcement learning & optimal control 
 - [deep learning for computer vision applications in the geosciences and remote sensing](#Deep-learning-based-computer-vision-geoscience-and-remote-sensing_applications)
-
+- [Numerical linear algebra and PDE-constrained optimization](#Numerical-linear-algebra-and-PDE-constrained-optimization)
 
 ## Teaching
 Emory University: 
@@ -66,12 +68,10 @@ Collaborators: Eldad Haber & Justin Granek. For this project we develop deep lea
 
 
 | ------------- | ------------- |
-| <img src="Figures/RemoteSensing/AI_nearsurface_overview_001.jpeg" width=1400 align=center>  | Applications include aquifer mapping using topography, gravitational, magnetic data, as well as various geological maps and point observations of the ground truth.  |
+|  Applications include aquifer mapping using topography, gravitational, magnetic data, as well as various geological maps and point observations of the ground truth. | <img src="Figures/RemoteSensing/AI_nearsurface_overview_001.jpeg" width=1500 align=center> |
 
-Time-lapse hyperspectral imaging maps a 4D input to a 2D maps of the suface of the earth, in terms of land-use change. 
-<img src="Figures/RemoteSensing/data3D_T1.png" width=200 align=center>
-<img src="Figures/RemoteSensing/data3D_T1.png" width=200 align=center>
-<img src="Figures/RemoteSensing/prediction_true_error_hyperspectral.png" width=400 align=center>
+| Time-lapse hyperspectral imaging maps a 4D input to a 2D maps of the suface of the earth, in terms of land-use change. | <img src="Figures/RemoteSensing/data3D_T1.png" width=150 align=center> <img src="Figures/RemoteSensing/data3D_T1.png" width=150 align=center> <img src="Figures/RemoteSensing/prediction_true_error_hyperspectral.png" width=800 align=center>|
+
 
 2D/3D geological model building from seismic images and borehole data (labels)
 
