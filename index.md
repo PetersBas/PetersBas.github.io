@@ -28,7 +28,7 @@ Spring 2021: [Linear Algebra MATH221](https://www.coursicle.com/emory/professors
 Please see my [scholar page.](https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao)
 
 ## Recent presentations (2019-2020)
-
+- Point-to-set distance functions for weakly supervised segmentation [poster](https://drive.google.com/file/d/1Kti65uLRwV98Pep96gtLTcAxSEFON-au/view?usp=sharing); [GEORGIA SCIENTIFIC COMPUTING SYMPOSIUM](https://sites.google.com/view/lin-mu/gscs21?authuser=0), Feb 2021.
 - [The Weaker the Better: Weak Supervision for Training Neural Networks for Seismic Interpretation; an Approach via Constrained Optimization](https://www.gshtx.org/SharedContent/Events/Event_Display.aspx?EventKey=16ba1771-dc38-4322-a813-a17c94463b49&WebsiteKey=955f17e6-46ad-4401-acbd-2af6c393752b); [Data Science and Machine Learning special interest group Geophysical Society of Houston. October 28, 2020]
 - [Constraints and optimization for weakly supervised deep-learning from few data and fewer labels](https://erlweb.mit.edu/events/fish-constraints-and-optimization-weakly-supervised-deep-learning-few-data-and-fewer-labels) MIT ERL FISH Seminar; October 23, 2020.
 - [Scientific Computing Seminar, Emory University](http://www.mathcs.emory.edu/site/scicomp/schedule/); Oct 16, 2020.
