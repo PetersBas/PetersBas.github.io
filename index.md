@@ -25,7 +25,8 @@ Fall 2020: [Linear Algebra MATH221](https://www.coursicle.com/emory/professors/B
 Spring 2021: [Linear Algebra MATH221](https://www.coursicle.com/emory/professors/Bas+Peters/) (all class info on Canvas)
 
 ## Publications
-new: Point-to-set distance functions for output-constrained neural networks, Journal of Applied and Numerical Optimization, [A Special Issue on Projection and Splitting Methods and Their Applications](http://jano.biemdas.com/archives/category/volume-4-issue-2). [pdf](Peters2022NetworkOutputConstraints.pdf)
+new: Point-to-set distance functions for output-constrained neural networks, Journal of Applied and Numerical Optimization 4 (2), 175-201, [A Special Issue on Projection and Splitting Methods and Their Applications](http://jano.biemdas.com/archives/category/volume-4-issue-2), Edited by Aviv Gibali, Pontus Giselsson, and Thomas Humphries. [pdf](Peters2022NetworkOutputConstraints.pdf)
+
 Please see my [scholar page.](https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao) for other publication.
 
 ## Recent presentations (2019-2020)
