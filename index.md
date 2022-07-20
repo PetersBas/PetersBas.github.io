@@ -25,7 +25,8 @@ Fall 2020: [Linear Algebra MATH221](https://www.coursicle.com/emory/professors/B
 Spring 2021: [Linear Algebra MATH221](https://www.coursicle.com/emory/professors/Bas+Peters/) (all class info on Canvas)
 
 ## Publications
-Please see my [scholar page.](https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao)
+new: Point-to-set distance functions for output-constrained neural networks, Journal of Applied and Numerical Optimization, [A Special Issue on Projection and Splitting Methods and Their Applications](http://jano.biemdas.com/archives/category/volume-4-issue-2). [pdf](Peters2022NetworkOutputConstraints.pdf)
+Please see my [scholar page.](https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao) for other publication.
 
 ## Recent presentations (2019-2020)
 - Point-to-set distance functions for weakly supervised segmentation [poster](https://drive.google.com/file/d/1Kti65uLRwV98Pep96gtLTcAxSEFON-au/view?usp=sharing); [GEORGIA SCIENTIFIC COMPUTING SYMPOSIUM](https://sites.google.com/view/lin-mu/gscs21?authuser=0), Feb 2021.
@@ -43,6 +44,9 @@ Please see my [scholar page.](https://scholar.google.ca/citations?user=gPVDmBEAA
 - Automatic classification of geologic units in seismic images using partially interpreted examples [81st EAGE Conference and Exhibition 2019]
 - Generalized Minkowski sets for the regularization of inverse problems (SIAM Conference on Mathematical and Computational Issues in the Geosciences, 2019) [video](https://www.pathlms.com/siam/courses/11267/sections/14618/video_presentations/128671) [slides](https://cdn.fs.pathlms.com/WpyqzDxDQmazQeMb3KRu)
 - Networks, loss-functions, regularization, and software for machine learning in the geosciences [Machine learning in solid earth geoscience, hosted by Los Alamos National Laboratory in Santa Fe, 2019]
+
+## Optimization and energy functions for protein design
+
 
 ## Computational methods for training neural networks for large scale inputs
 Collaborators: Keegan Lensink & Eldad Haber. Research focusses on developing fully reversible and invertible networks that have constant memory requirements as a function of network depth. This topic also includes methods for training networks in a 'factorized' form to reduce the memory required for weights.
