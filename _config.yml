@@ -1,4 +1,4 @@
-theme: jekyll-theme-minimal
+theme: minimal-mistakes-jekyll
 
 minimal_mistakes_skin: "dirt"
 
@@ -7,6 +7,12 @@ plugins:
 
 title: Dr. Bas Peters
 description: Research Scientist at Computational Geosciences Inc
+
+social:
+  type:  Person
+  links:
+    - "https://www.linkedin.com/in/bas-peters-b26ba3a/"
+    - "https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao"
 
 collections:
   pages:
