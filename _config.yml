@@ -1,0 +1,11 @@
+theme: jekyll-theme-minimal
+
+plugins:
+  - jekyll-feed
+
+title: Dr. Bas Peters
+description: Research Scientist at Computational Geosciences Inc
+
+collections:
+  pages:
+    output: true
