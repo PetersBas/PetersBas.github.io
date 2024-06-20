@@ -6,7 +6,7 @@ Bas Peters
 [LinkedIn](https://www.linkedin.com/in/bas-peters-b26ba3a/) | [Google Scholar](https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao) | [GitHub](https://github.com/PetersBas)
 
 | ------------- | ------------- |
-| Hi! I am a research scientist at Proteic Bioscience in Vancouver BC. Previously, I was a visiting assistant professor (2020-2021) in the [mathematics department at Emory University](https://www.math.emory.edu/home/). Before that, I worked for [Computational Geosciences Inc.](http://www.compgeoinc.com) and I was a graduate student in the [SLIM](http://slim.gatech.edu) group at the University of British Columbia (currently at Georgia Tech).| <img src="Figures/pers/PhotoBas.jpg" width=400 align=right>  |
+| Hi! I am a research scientist at [Computational Geosciences Inc.](https://www.compgeoinc.com). Before, I was a research scientist at Proteic Bioscience (currently [DiaGen Ai](https://diagen.ai) in Vancouver BC. Previously, I was a visiting assistant professor (2020-2021) in the [mathematics department at Emory University](https://www.math.emory.edu/home/). Before that, I worked for [Computational Geosciences Inc.](http://www.compgeoinc.com) and I was a graduate student in the [SLIM](http://slim.gatech.edu) group at the University of British Columbia (currently at Georgia Tech).| <img src="Figures/pers/PhotoBas.jpg" width=400 align=right>  |
 
 
 My research interests include 
@@ -20,12 +20,12 @@ My research interests include
 ## Teaching
 Emory University: 
 
-Fall 2020: [Linear Algebra MATH221](https://www.coursicle.com/emory/professors/Bas+Peters/) (all class info on Canvas)
+Fall 2020: [Linear Algebra MATH221](https://www.coursicle.com/emory/courses/MATH/221/) (all class info on Canvas)
 
-Spring 2021: [Linear Algebra MATH221](https://www.coursicle.com/emory/professors/Bas+Peters/) (all class info on Canvas)
+Spring 2021: [Linear Algebra MATH221](https://www.coursicle.com/emory/courses/MATH/221/) (all class info on Canvas)
 
 ## Publications
-new: Point-to-set distance functions for output-constrained neural networks, Journal of Applied and Numerical Optimization 4 (2), 175-201, [A Special Issue on Projection and Splitting Methods and Their Applications](http://jano.biemdas.com/archives/category/volume-4-issue-2), Edited by Aviv Gibali, Pontus Giselsson, and Thomas Humphries. [pdf](Peters2022NetworkOutputConstraints.pdf)
+**New**: Point-to-set distance functions for output-constrained neural networks, Journal of Applied and Numerical Optimization 4 (2), 175-201, [A Special Issue on Projection and Splitting Methods and Their Applications](http://jano.biemdas.com/archives/category/volume-4-issue-2), Edited by Aviv Gibali, Pontus Giselsson, and Thomas Humphries. [pdf](Peters2022NetworkOutputConstraints.pdf)
 
 Please see my [scholar page.](https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao) for other publication.
 
@@ -36,7 +36,7 @@ Please see my [scholar page.](https://scholar.google.ca/citations?user=gPVDmBEAA
 - [Scientific Computing Seminar, Emory University](http://www.mathcs.emory.edu/site/scicomp/schedule/); Oct 16, 2020.
 - A vision approach to mineral prospectivity mapping using reversible neural networks [Workshop on Machine Learning/Artificial Intelligence in Mineral Exploration; Society of Exploration Geophysicists Annual Meeting; Thursday, Oct 15, 2020]
 - Shortcutting inversion-based near-surface characterization workflows using deep learning [Special Session on Machine Learning in the Near Surface; Society of Exploration Geophysicists Annual Meeting; Oct 13, 2020]
-- Deep connections between learning from limited labels & physical parameter estimation - inspiration for regularization, Visual Learning with Limited Labels workshop at CVPR 2020.
+- Deep connections between learning from limited labels & physical parameter estimation - inspiration for regularization, [Visual Learning with Limited Labels workshop at CVPR 2020](https://www.learning-with-limited-labels.com/program).
 - [Fully Reversible Neural Networks for Large-Scale Surface and Sub-Surface Characterization via Remote Sensing, AI for Earth Sciences workshop at ICLR 2020](https://ai4earthscience.github.io/iclr-2020-workshop/) [video](https://slideslive.com/38926360/fully-reversible-neural-networks-for-largescale-surface-and-subsurface-characterization-via-remote-sensing)
 - Novel deep learning architectures and problem formulations for the geosciences. Department of Earth, Ocean and Atmospheric Sciences Seminar; University of British Columbia. Monday, March 9, 2020.
 - Scientific Computing, Applied and Industrial Mathematics (SCAIM) Seminar Series, UBC, October 29 2019 [slides](https://www.slideshare.net/BasPeters11/learning-from-a-few-largescale-partial-examples-computational-tools-regularization-and-network-design?qid=63f82a0e-9ee2-4a61-8cbb-94cb844e9a00&v=&b=&from_search=1)
