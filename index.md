@@ -6,7 +6,7 @@ Bas Peters
 [LinkedIn](https://www.linkedin.com/in/bas-peters-b26ba3a/) | [Google Scholar](https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao) | [GitHub](https://github.com/PetersBas)
 
 | ------------- | ------------- |
-| Hi! I am a research scientist at [Computational Geosciences Inc.](https://www.compgeoinc.com). Before, I was a research scientist at Proteic Bioscience (currently [DiaGen Ai](https://diagen.ai) in Vancouver BC. Previously, I was a visiting assistant professor (2020-2021) in the [mathematics department at Emory University](https://www.math.emory.edu/home/). Before that, I worked for [Computational Geosciences Inc.](http://www.compgeoinc.com) and I was a graduate student in the [SLIM](http://slim.gatech.edu) group at the University of British Columbia (currently at Georgia Tech).| <img src="Figures/pers/PhotoBas.jpg" width=400 align=right>  |
+| Hi! I am a research scientist at [Computational Geosciences Inc.](https://www.compgeoinc.com) Before, I was a research scientist at Proteic Bioscience (currently [DiaGen Ai](https://diagen.ai)) in Vancouver BC. Previously, I was a visiting assistant professor (2020-2021) in the [mathematics department at Emory University](https://www.math.emory.edu/home/). Before that, I worked for [Computational Geosciences Inc.](http://www.compgeoinc.com) and I was a graduate student in the [SLIM](http://slim.gatech.edu) group at the University of British Columbia (currently at Georgia Tech).| 
 
 
 My research interests include 
@@ -24,15 +24,25 @@ Fall 2020: [Linear Algebra MATH221](https://www.coursicle.com/emory/courses/MATH
 
 Spring 2021: [Linear Algebra MATH221](https://www.coursicle.com/emory/courses/MATH/221/) (all class info on Canvas)
 
-## Publications
-**New**: Point-to-set distance functions for output-constrained neural networks, Journal of Applied and Numerical Optimization 4 (2), 175-201, [A Special Issue on Projection and Splitting Methods and Their Applications](http://jano.biemdas.com/archives/category/volume-4-issue-2), Edited by Aviv Gibali, Pontus Giselsson, and Thomas Humphries. [pdf](Peters2022NetworkOutputConstraints.pdf)
+## Recent Publications
+[in review: Fully invertible hyperbolic neural networks for segmenting large-scale surface and sub-surface data](https://arxiv.org/pdf/2407.00595). Bas Peters, Eldad Haber, Keegan Lensink
+[in review: Paired Autoencoders for Inverse Problems](https://arxiv.org/pdf/2405.13220). Matthias Chung, Emma Hart, Julianne Chung, Bas Peters, Eldad Haber
+[in review: InvertibleNetworks. jl: A Julia package for scalable normalizing flows](https://arxiv.org/pdf/2312.13480). Rafael Orozco, Philipp Witte, Mathias Louboutin, Ali Siahkoohi, Gabrio Rizzuti, Bas Peters, Felix J Herrmann.
+[Fully hyperbolic convolutional neural networks](https://link.springer.com/article/10.1007/s40687-022-00343-1) Lensink, Keegan, Bas Peters, and Eldad Haber. Research in the Mathematical Sciences 9.4 (2022): 60. 
+Point-to-set distance functions for output-constrained neural networks, Journal of Applied and Numerical Optimization 4 (2), 175-201, [A Special Issue on Projection and Splitting Methods and Their Applications](http://jano.biemdas.com/archives/category/volume-4-issue-2), Edited by Aviv Gibali, Pontus Giselsson, and Thomas Humphries. [pdf](Peters2022NetworkOutputConstraints.pdf)
 
-Please see my [scholar page.](https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao) for other publication.
+Please see my [scholar page.](https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao) for other publications.
 
-## Recent presentations (2019-2020)
+## Recent & Upcoming Presentations
+- Inverting airborne electromagnetic data with machine learning. Michael S McMillan, Bas Peters, Ophir Greif, Paulina Wozniakowska, Eldad Haber. Near Surface Geoscience Conference & Exhibition, Septermber 2024
+- CQNet: convex-geometric interpretation and constraining neural-network trajectories. Bas Peters. SIAM Annual Meeting, August 2024
+- GNflow: Fast Reinforcement Learning with Automatic Hyperparameter Tuning. Elizabeth Newman, Lars Ruthotto, Bas Peters. SIAM Conference on Optimization 2023.
+- Gauss-Newton Flow for Q-Learning. Bas Peters, Lars Ruthotto. Mechanistic Machine Learning and Digital Twins for Computational Science, Engineering & Technology 2021.
+
+## Selected Presentations
 - Point-to-set distance functions for weakly supervised segmentation [poster](https://drive.google.com/file/d/1Kti65uLRwV98Pep96gtLTcAxSEFON-au/view?usp=sharing); [GEORGIA SCIENTIFIC COMPUTING SYMPOSIUM](https://sites.google.com/view/lin-mu/gscs21?authuser=0), Feb 2021.
 - [The Weaker the Better: Weak Supervision for Training Neural Networks for Seismic Interpretation; an Approach via Constrained Optimization](https://www.gshtx.org/SharedContent/Events/Event_Display.aspx?EventKey=16ba1771-dc38-4322-a813-a17c94463b49&WebsiteKey=955f17e6-46ad-4401-acbd-2af6c393752b); [Data Science and Machine Learning special interest group Geophysical Society of Houston. October 28, 2020]
-- [Constraints and optimization for weakly supervised deep-learning from few data and fewer labels](https://erlweb.mit.edu/events/fish-constraints-and-optimization-weakly-supervised-deep-learning-few-data-and-fewer-labels) MIT ERL FISH Seminar; October 23, 2020.
+- [Constraints and optimization for weakly supervised deep-learning from few data and fewer labels](https://erlweb.mit.edu/events/fish-constraints-and-optimization-weakly-supervised-deep-learning-few-data-and-fewer-labels) MIT ERL FISH Seminar; October 23, 2020. [recording](https://youtu.be/K6-Pl9b2-9c?si=KGPxL8cPR68XNReI)
 - [Scientific Computing Seminar, Emory University](http://www.mathcs.emory.edu/site/scicomp/schedule/); Oct 16, 2020.
 - A vision approach to mineral prospectivity mapping using reversible neural networks [Workshop on Machine Learning/Artificial Intelligence in Mineral Exploration; Society of Exploration Geophysicists Annual Meeting; Thursday, Oct 15, 2020]
 - Shortcutting inversion-based near-surface characterization workflows using deep learning [Special Session on Machine Learning in the Near Surface; Society of Exploration Geophysicists Annual Meeting; Oct 13, 2020]
