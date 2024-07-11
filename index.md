@@ -25,11 +25,11 @@ Fall 2020: [Linear Algebra MATH221](https://www.coursicle.com/emory/courses/MATH
 Spring 2021: [Linear Algebra MATH221](https://www.coursicle.com/emory/courses/MATH/221/) (all class info on Canvas)
 
 ## Recent Publications
-[in review: Fully invertible hyperbolic neural networks for segmenting large-scale surface and sub-surface data](https://arxiv.org/pdf/2407.00595). Bas Peters, Eldad Haber, Keegan Lensink
-[in review: Paired Autoencoders for Inverse Problems](https://arxiv.org/pdf/2405.13220). Matthias Chung, Emma Hart, Julianne Chung, Bas Peters, Eldad Haber
-[in review: InvertibleNetworks. jl: A Julia package for scalable normalizing flows](https://arxiv.org/pdf/2312.13480). Rafael Orozco, Philipp Witte, Mathias Louboutin, Ali Siahkoohi, Gabrio Rizzuti, Bas Peters, Felix J Herrmann.
-[Fully hyperbolic convolutional neural networks](https://link.springer.com/article/10.1007/s40687-022-00343-1) Lensink, Keegan, Bas Peters, and Eldad Haber. Research in the Mathematical Sciences 9.4 (2022): 60. 
-Point-to-set distance functions for output-constrained neural networks, Journal of Applied and Numerical Optimization 4 (2), 175-201, [A Special Issue on Projection and Splitting Methods and Their Applications](http://jano.biemdas.com/archives/category/volume-4-issue-2), Edited by Aviv Gibali, Pontus Giselsson, and Thomas Humphries. [pdf](Peters2022NetworkOutputConstraints.pdf)
+- [in review: Fully invertible hyperbolic neural networks for segmenting large-scale surface and sub-surface data](https://arxiv.org/pdf/2407.00595). Bas Peters, Eldad Haber, Keegan Lensink
+- [in review: Paired Autoencoders for Inverse Problems](https://arxiv.org/pdf/2405.13220). Matthias Chung, Emma Hart, Julianne Chung, Bas Peters, Eldad Haber
+- [in review: InvertibleNetworks. jl: A Julia package for scalable normalizing flows](https://arxiv.org/pdf/2312.13480). Rafael Orozco, Philipp Witte, Mathias Louboutin, Ali Siahkoohi, Gabrio Rizzuti, Bas Peters, Felix J Herrmann.
+- [Fully hyperbolic convolutional neural networks](https://link.springer.com/article/10.1007/s40687-022-00343-1) Lensink, Keegan, Bas Peters, and Eldad Haber. Research in the Mathematical Sciences 9.4 (2022): 60. 
+- [Point-to-set distance functions for output-constrained neural networks, Journal of Applied and Numerical Optimization 4 (2), 175-201, A Special Issue on Projection and Splitting Methods and Their Applications](http://jano.biemdas.com/archives/category/volume-4-issue-2), Edited by Aviv Gibali, Pontus Giselsson, and Thomas Humphries. [pdf](Peters2022NetworkOutputConstraints.pdf)
 
 Please see my [scholar page.](https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao) for other publications.
 
