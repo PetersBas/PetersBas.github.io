@@ -29,6 +29,7 @@ Fall 2020: [Linear Algebra MATH221](https://www.coursicle.com/emory/courses/MATH
 Spring 2021: [Linear Algebra MATH221](https://www.coursicle.com/emory/courses/MATH/221/) (all class info on Canvas)
 
 ## Recent Publications
+- [Positive-only geospatial discovery through conditional generative modeling of mineral occurrences and geological structures](https://doi.org/10.13140/RG.2.2.19517.42728). Bas Peters, Eldad Haber, Moshe Eliasof, George Turkiyyah, David Elliot Keyes. October 2026.
 - [Latent Space Inference via Paired Autoencoders](https://doi.org/10.1007/s10851-026-01334-5). Emma Hart, Bas Peters, Julianne Chung, Matthias Chung. Journal of Mathematical Imaging and Vision 68 (4), 50, 2026. [arXiv](https://arxiv.org/abs/2601.11397)
 - [Machine learning for airborne electromagnetic data inversion: A bootstrapped approach](https://doi.org/10.1190/tle-2025-1001). Ophir Greif, Bas Peters, Michael S. McMillan, Paulina Wozniakowska, Eldad Haber. The Leading Edge 45 (3), 171-181, 2026.
 - [Loosely constrained lithology prediction using Convolutional Neural Network](https://doi.org/10.63929/22020586.2025.1.098). Paulina Wozniakowska, Frederick A. Jackson, Ophir Greif, Bas Peters, Michael S. McMillan, Johnathan Kuttai, Jeff Zurek. ASEG Extended Abstracts 2025.
