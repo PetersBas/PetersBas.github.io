@@ -6,7 +6,11 @@ Bas Peters
 [LinkedIn](https://www.linkedin.com/in/bas-peters-b26ba3a/) | [Google Scholar](https://scholar.google.ca/citations?user=gPVDmBEAAAAJ&hl=en&oi=ao) | [GitHub](https://github.com/PetersBas)
 
 | ------------- | ------------- |
-| Hi! I am a research scientist at [Earth Dynamics AI](https://earthdynamics.ai). Before, I was a research scientist at [Computational Geosciences Inc.](https://www.compgeoinc.com) and at Proteic Bioscience (currently [DiaGen Ai](https://diagen.ai)) in Vancouver BC. Previously, I was a visiting assistant professor (2020-2021) in the [mathematics department at Emory University](https://www.math.emory.edu/home/). Before that, I worked for [Computational Geosciences Inc.](http://www.compgeoinc.com) and I was a graduate student in the [SLIM](http://slim.gatech.edu) group at the University of British Columbia (currently at Georgia Tech). I have published in applied mathematics, machine learning, and geoscience journals (Journal of Mathematical Imaging and Vision, Research in the Mathematical Sciences, Journal of Applied and Numerical Optimization, Machine Learning Science and Technology, Artificial Intelligence in Geosciences, Journal of Open Source Software, Geophysics, The Leading Edge, Interpretation), in the Handbook of Numerical Analysis, and in the proceedings of SEG, EAGE, EAGE Near Surface Geoscience, ASEG, and an ICLR workshop. I have presented at SIAM (Annual Meeting, Optimization, Computational Science and Engineering, Mathematical and Computational Issues in the Geosciences), SEG (Annual Meeting, Critical Minerals Forum), EAGE (Annual Conference, Near Surface Geoscience), CVPR and ICLR workshops, Mechanistic Machine Learning and Digital Twins, Machine Learning in Solid Earth Geoscience (Los Alamos), Applied Inverse Problems, the International Conference on Preconditioning Techniques, and the Georgia Scientific Computing Symposium.| 
+| Hi! I am a research scientist at [Earth Dynamics AI](https://earthdynamics.ai). Before, I was a research scientist at [Computational Geosciences Inc.](https://www.compgeoinc.com) and at Proteic Bioscience (currently [DiaGen Ai](https://diagen.ai)) in Vancouver BC. Previously, I was a visiting assistant professor (2020-2021) in the [mathematics department at Emory University](https://www.math.emory.edu/home/). Before that, I worked for [Computational Geosciences Inc.](http://www.compgeoinc.com) and I was a graduate student in the [SLIM](http://slim.gatech.edu) group at the University of British Columbia (currently at Georgia Tech). 
+
+I have published in applied mathematics, machine learning, and geoscience journals (Journal of Mathematical Imaging and Vision, Research in the Mathematical Sciences, Journal of Applied and Numerical Optimization, Machine Learning Science and Technology, Artificial Intelligence in Geosciences, Journal of Open Source Software, Geophysics, The Leading Edge, Interpretation), in the Handbook of Numerical Analysis, and in the proceedings of SEG, EAGE, EAGE Near Surface Geoscience, ASEG, and an ICLR workshop. 
+
+I have presented at SIAM (Annual Meeting, Optimization, Computational Science and Engineering, Mathematical and Computational Issues in the Geosciences), SEG (Annual Meeting, Critical Minerals Forum), EAGE (Annual Conference, Near Surface Geoscience), CVPR and ICLR workshops, Mechanistic Machine Learning and Digital Twins, Machine Learning in Solid Earth Geoscience (Los Alamos), Applied Inverse Problems, the International Conference on Preconditioning Techniques, and the Georgia Scientific Computing Symposium.| 
 
 
 My research interests include 
@@ -14,7 +18,7 @@ My research interests include
 - [Deep Learning and Generative Modeling for Inverse Problems](#deep-learning-and-generative-modeling-for-inverse-problems)
 - [computational methods to design and train neural networks for large scale inputs](#computational-methods-for-training-neural-networks-for-large-scale-inputs)
 - [constrained optimization for the regularization of inverse problems and neural networks](#constrained-optimization-for-regularizing-inverse-problems--neural-networks)
-- [deep learning for computer vision applications in the geosciences and remote sensing](#deep-learning-based-computer-vision-geoscience-and-remote-sensing-applications)
+- [deep learning for computer vision applications in the geosciences and remote sensing](#deep-learning-for-computer-vision-applications-in-the-geosciences-and-remote-sensing)
 - [Numerical linear algebra and PDE-constrained optimization](#numerical-linear-algebra-and-pde-constrained-optimization)
 
 ## Teaching
@@ -64,6 +68,16 @@ Please see my [scholar page.](https://scholar.google.ca/citations?user=gPVDmBEAA
 
 ## Deep learning and generative modeling for inverse problems
 We develop learned approaches to inverse problems. Paired autoencoders learn low-dimensional latent representations of both the model (parameter) space and the data space, together with mappings between the two latent spaces. This provides surrogate forward and inverse maps that can be trained without access to the likelihood. Related work includes invertible networks and normalizing flows for generative modeling, and machine-learning-based inversion of airborne electromagnetic data.
+
+<img src="Figures/InverseProblems/paired_autoencoder.png" width=400 align=center>
+
+Seismic inversion with a paired autoencoder. Top: true velocity model and the network prediction. Bottom: inversion in the latent space, initialized with the network prediction, versus conventional inversion from a basic starting model.
+
+<img src="Figures/InverseProblems/paired_autoencoder_seismic.png" width=500 align=center>
+
+Variational paired autoencoders allow sampling, which provides uncertainty estimates: the mean and standard deviation of the samples, and the error of the mean.
+
+<img src="Figures/InverseProblems/variational_paired_autoencoder_uq.png" width=700 align=center>
 
  - [Latent Space Inference via Paired Autoencoders](https://doi.org/10.1007/s10851-026-01334-5) / [arXiv](https://arxiv.org/abs/2601.11397)
  - [Good things come in pairs: paired autoencoders for inverse problems](https://www.sciencedirect.com/science/chapter/handbook/abs/pii/S157086592500002X) / [arXiv](https://arxiv.org/abs/2505.06549)
@@ -193,6 +207,10 @@ The same ideas carry over to neural networks. Constraints on the output, or on t
 ## Numerical linear algebra and PDE-constrained optimization
 We investigated how and when quadratic penalty methods offer andvantages over reduced-Lagrangian (adjoint-state) methods for non-convex seismic PDE-constrained optimization problems, in terms of the quality of the solution. 
 
+Starting from a poor initial model and without data below 7 Hz, wavefield-reconstruction inversion (a penalty method) recovers the main structures, while the reduced-Lagrangian (adjoint-state) method gets stuck.
+
+<img src="Figures/NumericalLinearAlgebra/wri_vs_reduced_lagrangian.png" width=700 align=center>
+
  - [Wave-equation Based Inversion with the Penalty Method-Adjoint-state Versus Wavefield-reconstruction Inversion](https://www.earthdoc.org/content/papers/10.3997/2214-4609.20140704)/[preprint](https://slim.gatech.edu/Publications/Public/Conferences/EAGE/2014/peters2014EAGEweb/peters2014EAGEweb.pdf)
  - [A new take on FWI-wavefield reconstruction inversion](https://www.earthdoc.org/content/papers/10.3997/2214-4609.20140703)/[preprint](https://slim.gatech.edu/Publications/Public/Conferences/EAGE/2014/leeuwen2014EAGEntf/leeuwen2014EAGEntf.pdf)
 
@@ -201,6 +219,10 @@ We also did some work in numerical linear algebra, aimed at seismic parameter es
 [A sparse reduced Hessian approximation for multi-parameter wavefield reconstruction inversion](https://library.seg.org/doi/abs/10.1190/segam2014-1667.1)/[preprint](https://slim.gatech.edu/Publications/Public/Conferences/SEG/2014/peters2014SEGsrh/peters2014SEGsrh.pdf)
 
 I developed a solver for block-structured least-squares problems, with slightly more rows than columns. These problems arise when solving for the states/fields when reduced quadratic-penalty methods are employed for time-harmonic PDE-constrained optimization problems. This is the first work that solves such problems in 3D and is based on a identity+low-rank factorization & Sherman-Morrison-Woodbury.
+
+3D acoustic wavefield-reconstruction inversion using this solver: true model (top) and the model estimated with bound constraints (bottom). Yellow circles are sources, purple crosses are receivers.
+
+<img src="Figures/NumericalLinearAlgebra/wri_3d.png" width=450 align=center>
 
 [A numerical solver for least-squares sub-problems in 3D wavefield reconstruction inversion and related problem formulations](https://library.seg.org/doi/abs/10.1190/segam2019-3216638.1)/[preprint](https://slim.gatech.edu/Publications/Public/Conferences/SEG/2019/peters2019SEGans/peters2019SEGans.pdf)
 
